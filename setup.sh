@@ -32,6 +32,7 @@ pikaur -S \
   mpv \
   neofetch \
   neovim \
+  net-tools \
   pandoc \
   pavucontrol \
   pdftk \
