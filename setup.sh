@@ -63,6 +63,11 @@ gsettings set org.gnome.desktop.interface clock-show-seconds true
 echo "Displaying asterisks on sudo..."
 sudo cp files/sudo /etc/sudoers.d/00-asterisks
 
+# Install NvChad
+echo "Installing NvChad"
+git clone https://github.com/NvChad/NvChad ~/.config/nvim
+nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+
 # Generate SSH key
 echo "Generating SSH key..."
 mkdir -p ~/.ssh
