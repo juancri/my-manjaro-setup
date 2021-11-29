@@ -1,5 +1,7 @@
 #!/bin/bash
 
+SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
 # Find fastest mirror
 echo "Finding fastest mirror..."
 sudo pacman-mirrors --geoip
@@ -74,7 +76,7 @@ gsettings set org.gnome.desktop.interface clock-show-seconds true
 
 # Display asterisks on sudo
 echo "Displaying asterisks on sudo..."
-sudo cp files/sudo /etc/sudoers.d/00-asterisks
+sudo cp "${SCRIPT_DIR}/files/sudo" /etc/sudoers.d/00-asterisks
 
 # Install NvChad
 echo "Installing NvChad"
