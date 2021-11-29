@@ -85,6 +85,10 @@ nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 echo "Setting default browser to Google Chrome..."
 xdg-settings set default-web-browser google-chrome.desktop
 
+# Set favorite apps
+echo "Setting favorite apps..."
+gsettings set org.gnome.shell favorite-apps "['google-chrome.desktop', 'org.gnome.Terminal.desktop', 'pavucontrol.desktop', 'visual-studio-code.desktop', 'org.gnome.Geary.desktop']"
+
 # Generate SSH key
 echo "Generating SSH key..."
 mkdir -p ~/.ssh
