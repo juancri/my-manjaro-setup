@@ -34,6 +34,7 @@ echo "Installing extra packages..."
 pikaur -S \
   bind \
   cpufetch \
+  deluge-gtk \
   expressvpn-gui-gtk \
   ffmpeg \
   github-cli \
