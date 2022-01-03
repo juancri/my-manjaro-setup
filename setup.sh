@@ -44,6 +44,7 @@ pikaur -S \
   jq \
   lsd \
   meld \
+  mlocate \
   nmap \
   mpv \
   neofetch \
