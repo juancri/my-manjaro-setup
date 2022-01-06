@@ -38,6 +38,7 @@ pikaur -S \
   expressvpn-gui-gtk \
   ffmpeg \
   github-cli \
+  gnome-boxes \
   google-chrome \
   htop \
   httpie \
