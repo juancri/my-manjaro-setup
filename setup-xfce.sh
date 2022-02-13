@@ -52,6 +52,7 @@ pikaur -S \
   neofetch \
   neovim \
   net-tools \
+  noto-fonts-emoji \
   pandoc \
   pavucontrol \
   pdftk \
