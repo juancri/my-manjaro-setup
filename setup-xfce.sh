@@ -38,6 +38,7 @@ pikaur -S \
   deluge-gtk \
   expressvpn-gui-gtk \
   ffmpeg \
+  git-completion \
   github-cli \
   gnome-boxes \
   google-chrome \

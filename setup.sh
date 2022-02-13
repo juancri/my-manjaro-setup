@@ -12,7 +12,7 @@ sudo pacman -Syuu
 
 # Setup pikaur
 echo "Setting up pikaur..."
-sudo pacman -S --needed base-devel git
+sudo pacman -S --needed base-devel
 mkdir -p ~/src
 cd ~/src
 git clone https://aur.archlinux.org/pikaur.git
@@ -32,11 +32,13 @@ gpg --import /tmp/expressvpn.asc
 # Install extra packages
 echo "Installing extra packages..."
 pikaur -S \
+  bash-git-prompt \
   bind \
   cpufetch \
   deluge-gtk \
   expressvpn-gui-gtk \
   ffmpeg \
+  git-completion \
   github-cli \
   gnome-boxes \
   google-chrome \
@@ -51,6 +53,7 @@ pikaur -S \
   neofetch \
   neovim \
   net-tools \
+  noto-fonts-emoji \
   pandoc \
   pavucontrol \
   pdftk \
@@ -94,6 +97,10 @@ xdg-settings set default-web-browser google-chrome.desktop
 echo "Setting favorite apps..."
 gsettings set org.gnome.shell favorite-apps "['google-chrome.desktop', 'org.gnome.Terminal.desktop', 'pavucontrol.desktop', 'visual-studio-code.desktop', 'org.gnome.Geary.desktop']"
 
+# Set up bash
+echo "Setting up bash..."
+cp files/bashrc ~/.bashrc
+
 # Generate SSH key
 echo "Generating SSH key..."
 mkdir -p ~/.ssh
@@ -110,5 +117,4 @@ git config --global user.email "${EMAIL}"
 # Display public key
 echo "This is your public key. You can register it on GitHub."
 cat ~/.ssh/id_rsa.pub
-
 
