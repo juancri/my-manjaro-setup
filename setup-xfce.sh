@@ -33,6 +33,7 @@ gpg --import /tmp/expressvpn.asc
 echo "Installing extra packages..."
 pikaur -S \
   aws-cli \
+  bash-completion \
   bash-git-prompt \
   bind \
   cpufetch \

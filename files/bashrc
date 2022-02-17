@@ -140,6 +140,9 @@ ex ()
 GIT_PROMPT_THEME=Plague_Doctor
 source /usr/lib/bash-git-prompt/gitprompt.sh
 
+# Bash completion
+source /usr/share/bash-completion/bash_completion
+
 # Git completion
 source /usr/local/share/bash-completion/completions/git
 
