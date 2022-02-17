@@ -92,7 +92,7 @@ xdg-settings set default-web-browser google-chrome.desktop
 
 # Set up bash
 echo "Setting up bash..."
-cp files/bashrc ~/.bashrc
+cp "${SCRIPT_DIR}/files/bashrc" ~/.bashrc
 
 # Generate SSH key
 echo "Generating SSH key..."
