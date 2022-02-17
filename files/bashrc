@@ -144,7 +144,7 @@ source /usr/lib/bash-git-prompt/gitprompt.sh
 source /usr/local/share/bash-completion/completions/git
 
 # Node
-NODE_PATH=$HOME/src/node/node-v16.13.0-linux-x64
+NODE_PATH=$HOME/src/node/node-v16.14.0-linux-x64
 export PATH=$NODE_PATH/bin:$PATH
 
 # Default editor
