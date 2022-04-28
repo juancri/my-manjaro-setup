@@ -46,6 +46,7 @@ pikaur -S \
   httpie \
   jq \
   lsd \
+  mc \
   meld \
   mlocate \
   nmap \
