@@ -32,6 +32,8 @@ gpg --import /tmp/expressvpn.asc
 # Install extra packages
 echo "Installing extra packages..."
 pikaur -S \
+  aws-cli \
+  bash-completion \
   bash-git-prompt \
   bind \
   cpufetch \
@@ -61,6 +63,7 @@ pikaur -S \
   pinta \
   simplescreenrecorder \
   speedtest-cli \
+  synapse \
   texlive-most \
   tldr \
   traceroute \
@@ -73,8 +76,8 @@ pikaur -S \
 echo "Installing nodejs..."
 mkdir -p ~/src/node
 pushd ~/src/node
-wget https://nodejs.org/dist/v16.13.0/node-v16.13.0-linux-x64.tar.xz
-tar xf node-v16.13.0-linux-x64.tar.xz
+wget https://nodejs.org/dist/v16.14.0/node-v16.14.0-linux-x64.tar.xz
+tar xf node-v16.14.0-linux-x64.tar.xz
 popd
 
 # Display seconds
@@ -100,7 +103,7 @@ gsettings set org.gnome.shell favorite-apps "['google-chrome.desktop', 'org.gnom
 
 # Set up bash
 echo "Setting up bash..."
-cp files/bashrc ~/.bashrc
+cp "${SCRIPT_DIR}/files/bashrc" ~/.bashrc
 
 # Generate SSH key
 echo "Generating SSH key..."
