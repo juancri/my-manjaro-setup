@@ -36,6 +36,7 @@ pikaur -S \
   bash-completion \
   bash-git-prompt \
   bind \
+  compiz \
   cpufetch \
   deluge-gtk \
   expressvpn-gui-gtk \
@@ -92,6 +93,10 @@ nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 # Set default browser to Google Chrome
 echo "Setting default browser to Google Chrome..."
 xdg-settings set default-web-browser google-chrome.desktop
+
+# Disable super key to open menu
+echo "Disabling super key as the shortcut to open the main menu..."
+gsettings set com.solus-project.brisk-menu hot-key ''
 
 # Set up bash
 echo "Setting up bash..."
