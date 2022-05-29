@@ -26,3 +26,14 @@ git clone https://github.com/juancri/my-manjaro-setup.git ~/.my-manjaro-setup
 ~/.my-manjaro-setup/setup-mate.sh
 ```
 
+# Lite versions
+
+Lite versions install just basic tools
+
+## Run on Manjaro MATE Lite
+
+```
+git clone https://github.com/juancri/my-manjaro-setup.git ~/.my-manjaro-setup
+~/.my-manjaro-setup/setup-mate-lite.sh
+```
+
