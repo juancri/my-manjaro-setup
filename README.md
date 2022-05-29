@@ -19,3 +19,10 @@ git clone https://github.com/juancri/my-manjaro-setup.git ~/.my-manjaro-setup
 ~/.my-manjaro-setup/setup-xfce.sh
 ```
 
+## Run on Manjaro MATE
+
+```
+git clone https://github.com/juancri/my-manjaro-setup.git ~/.my-manjaro-setup
+~/.my-manjaro-setup/setup-mate.sh
+```
+
