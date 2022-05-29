@@ -54,8 +54,8 @@ pikaur -S \
 echo "Installing nodejs..."
 mkdir -p ~/src/node
 pushd ~/src/node
-wget https://nodejs.org/dist/v16.14.0/node-v16.14.0-linux-x64.tar.xz
-tar xf node-v16.14.0-linux-x64.tar.xz
+wget https://nodejs.org/dist/v16.15.0/node-v16.15.0-linux-x64.tar.xz
+tar xf node-v16.15.0-linux-x64.tar.xz
 popd
 
 # Display asterisks on sudo
