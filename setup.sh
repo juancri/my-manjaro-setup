@@ -2,6 +2,10 @@
 
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
+# Sync time
+echo "Syncing time..."
+sudo timedatectl set-ntp true
+
 # Find fastest mirror
 echo "Finding fastest mirror..."
 sudo pacman-mirrors --geoip
