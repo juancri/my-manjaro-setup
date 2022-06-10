@@ -45,6 +45,7 @@ pikaur -S \
   deluge-gtk \
   expressvpn-gui-gtk \
   ffmpeg \
+  flameshot \
   git-completion \
   github-cli \
   gnome-boxes \
