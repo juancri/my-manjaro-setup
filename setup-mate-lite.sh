@@ -44,6 +44,7 @@ pikaur -S \
   mlocate \
   neovim \
   net-tools \
+  shellcheck \
   synapse \
   tldr \
   traceroute \

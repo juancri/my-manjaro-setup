@@ -67,6 +67,7 @@ pikaur -S \
   pavucontrol \
   pdftk \
   pinta \
+  shellcheck \
   simplescreenrecorder \
   speedtest-cli \
   synapse \
