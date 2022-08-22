@@ -74,7 +74,7 @@ pikaur -S \
   traceroute \
   visual-studio-code-bin \
   whois \
-  youtube-dl \
+  yt-dlp \
   zoom
 
 # Install node
