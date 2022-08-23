@@ -40,7 +40,6 @@ pikaur -S \
   bash-completion \
   bash-git-prompt \
   bind \
-  compiz \
   cpufetch \
   deluge-gtk \
   expressvpn-gui-gtk \
