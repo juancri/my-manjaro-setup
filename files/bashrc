@@ -146,6 +146,9 @@ source /usr/share/bash-completion/bash_completion
 # Git completion
 source /usr/local/share/bash-completion/completions/git
 
+# Command not found
+source /usr/share/doc/pkgfile/command-not-found.bash
+
 # Node
 NODE_PATH=$HOME/src/node/node-v16.17.0-linux-x64
 export PATH=$NODE_PATH/bin:$PATH

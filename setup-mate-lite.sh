@@ -51,6 +51,10 @@ pikaur -S \
   visual-studio-code-bin \
   whois
 
+# Update pkgfile database
+echo "Updating pkgfile database..."
+sudo pkgfile -u
+
 # Install node
 echo "Installing nodejs..."
 mkdir -p ~/src/node
