@@ -42,6 +42,7 @@ pikaur -S \
   bind \
   cpufetch \
   deluge-gtk \
+  exfatprogs \
   expressvpn-gui-gtk \
   ffmpeg \
   flameshot \
