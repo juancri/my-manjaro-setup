@@ -67,11 +67,6 @@ popd
 echo "Displaying asterisks on sudo..."
 sudo cp "${SCRIPT_DIR}/files/sudo" /etc/sudoers.d/00-asterisks
 
-# Install NvChad
-echo "Installing NvChad"
-git clone https://github.com/NvChad/NvChad ~/.config/nvim
-nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
-
 # Disable super key to open menu
 echo "Disabling super key as the shortcut to open the main menu..."
 gsettings set com.solus-project.brisk-menu hot-key ''
