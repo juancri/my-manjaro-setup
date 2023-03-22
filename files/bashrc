@@ -150,7 +150,7 @@ source /usr/local/share/bash-completion/completions/git
 source /usr/share/doc/pkgfile/command-not-found.bash
 
 # Node
-NODE_PATH=$HOME/src/node/node-v16.17.0-linux-x64
+NODE_PATH=$HOME/src/node/node-v18.15.0-linux-x64
 export PATH=$NODE_PATH/bin:$PATH
 
 # Default editor
