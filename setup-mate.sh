@@ -50,6 +50,7 @@ pikaur -S \
   github-cli \
   gnome-boxes \
   google-chrome \
+  gparted \
   htop \
   httpie \
   jq \
