@@ -103,6 +103,9 @@ sudo cp "${SCRIPT_DIR}/files/sudo" /etc/sudoers.d/00-asterisks
 echo "Setting default browser to Google Chrome..."
 xdg-settings set default-web-browser google-chrome.desktop
 
+# Install neovim plugins
+curl -sLf https://spacevim.org/install.sh | bash
+
 # Set up bash
 echo "Setting up bash..."
 cp "${SCRIPT_DIR}/files/bashrc" ~/.bashrc

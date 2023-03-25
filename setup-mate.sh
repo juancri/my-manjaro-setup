@@ -104,6 +104,9 @@ xdg-settings set default-web-browser google-chrome.desktop
 echo "Disabling super key as the shortcut to open the main menu..."
 gsettings set com.solus-project.brisk-menu hot-key ''
 
+# Install neovim plugins
+curl -sLf https://spacevim.org/install.sh | bash
+
 # Set up bash
 echo "Setting up bash..."
 cp "${SCRIPT_DIR}/files/bashrc" ~/.bashrc
