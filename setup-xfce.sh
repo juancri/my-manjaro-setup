@@ -42,6 +42,7 @@ pikaur -S \
   bind \
   cpufetch \
   deluge-gtk \
+  etcher-bin \
   exfatprogs \
   expressvpn-gui-gtk \
   ffmpeg \
