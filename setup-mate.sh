@@ -108,6 +108,9 @@ gsettings set com.solus-project.brisk-menu hot-key ''
 # Install neovim plugins
 curl -sLf https://spacevim.org/install.sh | bash
 
+# Enable expressvpn
+sudo systemctl enable expressvpn
+
 # Set up bash
 echo "Setting up bash..."
 cp "${SCRIPT_DIR}/files/bashrc" ~/.bashrc
