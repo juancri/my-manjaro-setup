@@ -111,6 +111,10 @@ curl -sLf https://spacevim.org/install.sh | bash
 echo "Enabling ExpressVPN service..."
 sudo systemctl enable expressvpn
 
+# Disable Super+P shortcut
+echo "Disabling Super+P shortcut..."
+gsettings set org.gnome.mutter.keybindings switch-monitor "[]"
+
 # Set up bash
 echo "Setting up bash..."
 cp "${SCRIPT_DIR}/files/bashrc" ~/.bashrc
