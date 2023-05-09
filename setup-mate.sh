@@ -109,6 +109,7 @@ gsettings set com.solus-project.brisk-menu hot-key ''
 curl -sLf https://spacevim.org/install.sh | bash
 
 # Enable expressvpn
+echo "Enabling ExpressVPN service..."
 sudo systemctl enable expressvpn
 
 # Set up bash

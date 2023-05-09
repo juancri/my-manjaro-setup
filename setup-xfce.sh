@@ -104,6 +104,7 @@ xdg-settings set default-web-browser google-chrome.desktop
 curl -sLf https://spacevim.org/install.sh | bash
 
 # Enable expressvpn
+echo "Enabling ExpressVPN service..."
 sudo systemctl enable expressvpn
 
 # Set up bash
