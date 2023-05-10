@@ -36,6 +36,7 @@ gpg --import /tmp/expressvpn.asc
 # Install extra packages
 echo "Installing extra packages..."
 pikaur -S \
+  abiword \
   aws-cli \
   bash-completion \
   bash-git-prompt \
@@ -49,6 +50,7 @@ pikaur -S \
   git-completion \
   github-cli \
   gnome-boxes \
+  gnumeric \
   google-chrome \
   gparted \
   htop \
