@@ -128,8 +128,16 @@ dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' <
 # Set keyboard leyouts
 echo "Setting keyboard layouts..."
 gsettings set \
-  org.gnome.desktop.input-sources sources \
+  org.gnome.desktop.input-sources \
+  sources \
   "[('xkb', 'us'), ('xkb', 'es')]"
+
+# Set favorite apps
+echo "Setting favorite apps..."
+gsettings set \
+  org.gnome.shell \
+  favorite-apps \
+  "['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'code.desktop', 'google-chrome.desktop', 'deluge.desktop', 'pavucontrol.desktop']"
 
 # Change current user shell to bash
 echo "Changing current user shell to bash..."
