@@ -70,6 +70,7 @@ pikaur -S \
   pavucontrol \
   pdftk \
   pinta \
+  pop-icon-theme \
   shellcheck \
   simplescreenrecorder \
   speedtest-cli \
@@ -143,6 +144,13 @@ gsettings set \
 echo "Restoring file manager bookmarks..."
 mkdir -p ~/.config/gtk-3.0
 cp "${SCRIPT_DIR}/files/bookmarks" ~/.config/gtk-3.0/bookmarks
+
+# Set icon theme
+echo "Setting icon theme..."
+gsettings set \
+  org.gnome.desktop.interface \
+  icon-theme \
+  'Pop'
 
 # Change current user shell to bash
 echo "Changing current user shell to bash..."
