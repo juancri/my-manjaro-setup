@@ -1,0 +1,24 @@
+[custom0]
+binding='<Super>Return'
+command='gnome-terminal --maximize'
+name='terminal'
+
+[custom1]
+binding='<Super>KP_Enter'
+command='gnome-terminal --maximize'
+name='terminal 2'
+
+[custom2]
+binding='<Super>c'
+command='google-chrome-stable --new-window'
+name='chrome'
+
+[custom3]
+binding='<Super>e'
+command='nautilus Desktop'
+name='nautilus'
+
+[custom4]
+binding='<Super>p'
+command='pavucontrol'
+name='pavucontrol'
