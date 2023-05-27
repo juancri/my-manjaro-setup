@@ -103,6 +103,10 @@ gsettings set org.gnome.desktop.interface clock-show-seconds true
 echo "Displaying asterisks on sudo..."
 sudo cp "${SCRIPT_DIR}/files/sudo" /etc/sudoers.d/00-asterisks
 
+# Disable wayland
+echo "Disabling wayland..."
+sudo sed -i 's/#WaylandEnable=false/WaylandEnable=false/' /etc/gdm/custom.conf
+
 # Set default browser to Google Chrome
 echo "Setting default browser to Google Chrome..."
 xdg-settings set default-web-browser google-chrome.desktop
