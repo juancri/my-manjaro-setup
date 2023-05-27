@@ -139,6 +139,11 @@ gsettings set \
   favorite-apps \
   "['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'code.desktop', 'google-chrome.desktop', 'deluge.desktop', 'pavucontrol.desktop']"
 
+# Restore file manager bookmarks
+echo "Restoring file manager bookmarks..."
+mkdir -p ~/.config/gtk-3.0
+cp "${SCRIPT_DIR}/files/bookmarks" ~/.config/gtk-3.0/bookmarks
+
 # Change current user shell to bash
 echo "Changing current user shell to bash..."
 sudo chsh -s /bin/bash "$USER"
