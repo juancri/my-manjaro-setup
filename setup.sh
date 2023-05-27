@@ -117,6 +117,10 @@ sudo systemctl enable expressvpn
 echo "Disabling Super+P shortcut..."
 gsettings set org.gnome.mutter.keybindings switch-monitor "[]"
 
+# Restore gnome terminal profiles
+echo "Restoring GNOME Terminal profiles..."
+dconf load /org/gnome/terminal/legacy/profiles:/ < "${SCRIPT_DIR}/files/gnome-terminal-profiles.dconf"
+
 # Set up bash
 echo "Setting up bash..."
 cp "${SCRIPT_DIR}/files/bashrc" ~/.bashrc
