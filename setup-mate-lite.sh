@@ -59,8 +59,8 @@ sudo pkgfile -u
 echo "Installing nodejs..."
 mkdir -p ~/src/node
 pushd ~/src/node
-wget https://nodejs.org/dist/v16.17.0/node-v18.15.0-linux-x64.tar.xz
-tar xf node-v18.15.0-linux-x64.tar.xz
+wget https://nodejs.org/dist/v18.16.0/node-v18.16.0-linux-x64.tar.xz
+tar xf node-v18.16.0-linux-x64.tar.xz
 popd
 
 # Display asterisks on sudo
