@@ -125,6 +125,12 @@ dconf load /org/gnome/terminal/legacy/profiles:/ < "${SCRIPT_DIR}/files/gnome-te
 echo "Restoring custom keybindings..."
 dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < "${SCRIPT_DIR}/files/custom-keybindings.dconf"
 
+# Set keyboard leyouts
+echo "Setting keyboard layouts..."
+gsettings set \
+  org.gnome.desktop.input-sources sources \
+  "[('xkb', 'us'), ('xkb', 'es')]"
+
 # Change current user shell to bash
 echo "Changing current user shell to bash..."
 sudo chsh -s /bin/bash "$USER"
