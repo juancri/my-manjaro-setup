@@ -124,7 +124,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/ < "${SCRIPT_DIR}/files/gnome-te
 
 # Restore custom keybindings
 echo "Restoring custom keybindings..."
-dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < "${SCRIPT_DIR}/files/custom-keybindings.dconf"
+dconf load '/org/gnome/settings-daemon/plugins/media-keys/' < "${SCRIPT_DIR}/files/custom-keybindings.dconf"
 
 # Restore keyboard language keybindings
 echo "Restoring keyboard language keybindings..."
