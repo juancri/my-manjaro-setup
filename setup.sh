@@ -121,6 +121,10 @@ gsettings set org.gnome.mutter.keybindings switch-monitor "[]"
 echo "Restoring GNOME Terminal profiles..."
 dconf load /org/gnome/terminal/legacy/profiles:/ < "${SCRIPT_DIR}/files/gnome-terminal-profiles.dconf"
 
+# Change current user shell to bash
+echo "Changing current user shell to bash..."
+sudo chsh -s /bin/bash "$USER"
+
 # Set up bash
 echo "Setting up bash..."
 cp "${SCRIPT_DIR}/files/bashrc" ~/.bashrc

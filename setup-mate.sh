@@ -114,6 +114,10 @@ curl -sLf https://spacevim.org/install.sh | bash
 echo "Enabling ExpressVPN service..."
 sudo systemctl enable expressvpn
 
+# Change current user shell to bash
+echo "Changing current user shell to bash..."
+sudo chsh -s /bin/bash "$USER"
+
 # Set up bash
 echo "Setting up bash..."
 cp "${SCRIPT_DIR}/files/bashrc" ~/.bashrc

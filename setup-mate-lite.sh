@@ -71,6 +71,10 @@ sudo cp "${SCRIPT_DIR}/files/sudo" /etc/sudoers.d/00-asterisks
 echo "Disabling super key as the shortcut to open the main menu..."
 gsettings set com.solus-project.brisk-menu hot-key ''
 
+# Change current user shell to bash
+echo "Changing current user shell to bash..."
+sudo chsh -s /bin/bash "$USER"
+
 # Set up bash
 echo "Setting up bash..."
 cp "${SCRIPT_DIR}/files/bashrc" ~/.bashrc
