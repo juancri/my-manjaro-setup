@@ -160,6 +160,13 @@ gsettings set \
   icon-theme \
   'Pop'
 
+# Disable night light
+echo "Disabling night light..."
+gsettings set \
+  org.gnome.settings-daemon.plugins.color \
+  night-light-enabled \
+  false
+
 # Change current user shell to bash
 echo "Changing current user shell to bash..."
 sudo chsh -s /bin/bash "$USER"
