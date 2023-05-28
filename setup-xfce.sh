@@ -73,6 +73,7 @@ pikaur -S \
   shellcheck \
   simplescreenrecorder \
   speedtest-cli \
+  subdl \
   synapse \
   texlive-most \
   tldr \
