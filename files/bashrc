@@ -136,8 +136,15 @@ ex ()
   fi
 }
 
+# Bash not-git prompt
+source /usr/lib/bash-git-prompt/prompt-colors.sh
+MYPROMPT="${White}\A${ResetColor} ${BoldGreen}\\u${White}@${BoldYellow}\\h ${Cyan}\w${ResetColor}${BoldWhite} $ ${ResetColor}"
+PS1=$MYPROMPT
+
 # Bash git prompt
+GIT_PROMPT_FETCH_REMOTE_STATUS=0
 GIT_PROMPT_THEME=Plague_Doctor
+GIT_PROMPT_ONLY_IN_REPO=1
 source /usr/lib/bash-git-prompt/gitprompt.sh
 
 # Bash completion
