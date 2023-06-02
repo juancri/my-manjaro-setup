@@ -108,8 +108,9 @@ xdg-settings set default-web-browser google-chrome.desktop
 echo "Disabling super key as the shortcut to open the main menu..."
 gsettings set com.solus-project.brisk-menu hot-key ''
 
-# Install neovim plugins
-curl -sLf https://spacevim.org/install.sh | bash
+# Install NvChad
+echo "Installing NvChad..."
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
 # Enable expressvpn
 echo "Enabling ExpressVPN service..."

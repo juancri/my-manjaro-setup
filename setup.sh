@@ -112,8 +112,9 @@ sudo sed -i 's/#WaylandEnable=false/WaylandEnable=false/' /etc/gdm/custom.conf
 echo "Setting default browser to Google Chrome..."
 xdg-settings set default-web-browser google-chrome.desktop
 
-# Install neovim plugins
-curl -sLf https://spacevim.org/install.sh | bash
+# Install NvChad
+echo "Installing NvChad..."
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
 # Enable expressvpn
 echo "Enabling ExpressVPN service..."
