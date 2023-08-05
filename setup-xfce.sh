@@ -58,6 +58,7 @@ pikaur -S \
   jq \
   lsd \
   mc \
+  mdcat \
   meld \
   mlocate \
   nmap \

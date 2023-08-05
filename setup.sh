@@ -59,6 +59,7 @@ pikaur -S \
   lsd \
   manjaro-pipewire \
   mc \
+  mdcat \
   meld \
   mlocate \
   nmap \
