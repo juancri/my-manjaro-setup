@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 # Sync time
@@ -72,13 +74,17 @@ pikaur -S \
   pavucontrol \
   pdftk \
   pinta \
+  pkgfile \
   pop-icon-theme \
   shellcheck \
   simplescreenrecorder \
   speedtest-cli \
   subdl \
   synapse \
-  texlive-most \
+  texlive-fontsrecommended \
+  texlive-fontsextra \
+  texlive-latexextra \
+  texlive-latexrecommended \
   tldr \
   traceroute \
   visual-studio-code-bin \
@@ -133,6 +139,10 @@ dconf load '/org/gnome/settings-daemon/plugins/media-keys/' < "${SCRIPT_DIR}/fil
 # Restore keyboard language keybindings
 echo "Restoring keyboard language keybindings..."
 dconf load '/org/gnome/desktop/wm/keybindings/' < "${SCRIPT_DIR}/files/wm-keybindings.dconf"
+
+# Set maximize window shortcut
+echo "Setting maximize window shortcut..."
+gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
 
 # Set keyboard leyouts
 echo "Setting keyboard layouts..."
