@@ -46,6 +46,7 @@ pikaur -S \
   etcher-bin \
   exfatprogs \
   expressvpn-gui-gtk \
+  fastfetch \
   ffmpeg \
   git-completion \
   github-cli \
@@ -63,7 +64,6 @@ pikaur -S \
   mlocate \
   nmap \
   mpv \
-  neofetch \
   neovim \
   net-tools \
   noto-fonts-emoji \
