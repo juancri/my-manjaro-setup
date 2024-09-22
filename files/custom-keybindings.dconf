@@ -13,8 +13,8 @@ name='terminal 2'
 
 [custom-keybindings/custom2]
 binding='<Super>c'
-command='google-chrome-stable --new-window'
-name='google chrome'
+command='firefox'
+name='web browser'
 
 [custom-keybindings/custom3]
 binding='<Super>p'
