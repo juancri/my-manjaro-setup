@@ -112,9 +112,9 @@ gsettings set org.gnome.desktop.interface clock-show-seconds true
 echo "Displaying asterisks on sudo..."
 sudo cp "${SCRIPT_DIR}/files/sudo" /etc/sudoers.d/00-asterisks
 
-# Set default browser to Google Chrome
-echo "Setting default browser to Google Chrome..."
-xdg-settings set default-web-browser google-chrome.desktop
+# Set default browser to Firefox
+echo "Setting default browser to Firefox..."
+xdg-settings set default-web-browser firefox.desktop
 
 # Install NvChad
 echo "Installing NvChad..."
@@ -156,7 +156,7 @@ echo "Setting favorite apps..."
 gsettings set \
   org.gnome.shell \
   favorite-apps \
-  "['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'code.desktop', 'google-chrome.desktop', 'deluge.desktop', 'pavucontrol.desktop']"
+  "['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'code.desktop', 'deluge.desktop', 'firefox.desktop']"
 
 # Restore file manager bookmarks
 echo "Restoring file manager bookmarks..."
